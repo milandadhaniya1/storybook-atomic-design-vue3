@@ -1,15 +1,15 @@
-import MyLink from './Link.vue';
+import MyLink from "./Link.vue";
 
 export default {
-  title: 'Atoms/Link',
+  title: "Atoms/Link",
   component: MyLink,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
     target: {
       control: {
-        type: 'select',
+        type: "select",
       },
-      options: ['', '_self', '_blank', '_parent', '_top'],
+      options: ["", "_self", "_blank", "_parent", "_top"],
     },
   },
 };

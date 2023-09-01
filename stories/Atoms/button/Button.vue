@@ -3,7 +3,7 @@
 </template>
 
 <script setup>
-import './button.css';
+import "./Button.css";
 import { computed } from 'vue';
 
 const props = defineProps({
@@ -18,7 +18,7 @@ const props = defineProps({
   size: {
     type: String,
     validator: function (value) {
-      return ['small', 'medium', 'large'].indexOf(value) !== -1;
+      return ["small", "medium", "large"].indexOf(value) !== -1;
     },
   },
   backgroundColor: {
@@ -26,19 +26,19 @@ const props = defineProps({
   },
 });
 
-const emit = defineEmits(['click']);
+const emit = defineEmits(["click"]);
 
 const classes = computed(() => ({
-  'btn rounded-full font-bold hover:opacity-80': true,
-  'sb-btn--primary': props.primary,
-  'sb-btn--secondary': !props.primary,
-  [`sb-btn--${props.size || 'medium'}`]: true,
+  "btn shadow border border-gray-400 rounded-full font-bold hover:opacity-80": true,
+  "sb-btn--primary": props.primary,
+  "sb-btn--secondary": !props.primary,
+  [`sb-btn--${props.size || "medium"}`]: true,
 }));
 
 const style = computed(() => ({
   backgroundColor: props.backgroundColor,
 }));
 
-const onClick = () => emit('click');
+const onClick = () => emit("click");
 
 </script>

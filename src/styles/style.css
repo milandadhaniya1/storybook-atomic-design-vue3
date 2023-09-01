@@ -8,3 +8,10 @@
     --primary-bg-color: #1e90ff;
     --secondary-bg-color: #ffffff;
 }
+
+.text-color {
+    color: #2E2E2E;
+}
+.light-text-color {
+    color: 535353;
+}

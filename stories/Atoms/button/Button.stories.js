@@ -1,17 +1,17 @@
-import MyButton from './Button.vue';
+import MyButton from "./Button.vue";
 
 export default {
-  title: 'Atoms/Button',
+  title: "Atoms/Form Elements/Button",
   component: MyButton,
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   argTypes: {
     backgroundColor: {
-      control: 'color',
+      control: "color",
     },
     onClick: {},
     size: {
       control: {
-        type: 'select',
+        type: "select",
       },
       options: ['small', 'medium', 'large'],
     },
@@ -21,13 +21,13 @@ export default {
 export const Primary = {
   args: {
     primary: true,
-    label: 'Button',
+    label: "Button",
   },
 };
 
 export const Secondary = {
   args: {
-    label: 'Button',
+    label: "Button",
   },
 };
 
